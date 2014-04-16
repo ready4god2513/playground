@@ -3,7 +3,7 @@ class Fixnum
   def to_binary
     res = []
     base, mod = self, 0
-    while true do
+    loop do
       res << base % 2
       base = base / 2
       break if base == 0
